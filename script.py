@@ -50,12 +50,16 @@ def login2(args):
     chrome_options.add_argument('blink-settings=imagesEnabled=false')
     chrome_options.add_argument('--headless')
 
+    
+    # 获取浏览对象，操作浏览器元素，模拟浏览器行为
     driver = webdriver.Chrome("./chromedriver", options=chrome_options)
     driver.get("http://hr-welcometo.huawei.com/wcaportal")
     driver.find_element_by_name("uid").send_keys(args.id)
     driver.find_element_by_name("password").send_keys(args.pwd)
     driver.find_element_by_class_name("login_submit_pwd").click()
 
+    
+    # 从浏览器对象获取的cookies，再赋值给浏览器对象的cookie？
     cookies = driver.get_cookies()
 
     for c in cookies:
