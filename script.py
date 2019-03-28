@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
@@ -52,7 +54,8 @@ def login2(args):
 
     
     # 获取浏览对象，操作浏览器元素，模拟浏览器行为
-    driver = webdriver.Chrome("./chromedriver", options=chrome_options)
+    #driver = webdriver.Chrome("./chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver")
     driver.get("http://hr-welcometo.huawei.com/wcaportal")
     driver.find_element_by_name("uid").send_keys(args.id)
     driver.find_element_by_name("password").send_keys(args.pwd)
