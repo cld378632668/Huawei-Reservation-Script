@@ -25,6 +25,24 @@ http://chromedriver.storage.googleapis.com/index.html
 
 Please download according to your environment, and put it into the folder of this script.
 
+chromedriver版本	支持的chrome版本
+v2.46	v71-73
+v2.43	v69-71
+v2.42	v68-70
+v2.41	v67-69
+v2.40	v66-68
+v2.39	v66-68
+v2.38	v65-67
+v2.37	v64-66
+v2.36	v63-65
+v2.35	v62-64
+v2.34	v61-63
+v2.33	v60-62
+v2.32	v59-61
+v2.31	v58-60
+v2.30	v58-60
+
+
 ## Running the script
 
 Use below instruction to run the script.
